@@ -10,7 +10,7 @@ import { UsersService } from "./users.service";
 })
 export class UsersDataSource {
 
-  dataSourceOptions: DataSourceOptions = {
+  private dataSourceOptions: DataSourceOptions = {
     length: 0,
     pageSize: 0,
     pageSizeOptions: PAGE_SIZE_OPTIONS,
