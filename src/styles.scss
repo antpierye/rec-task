@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.warning-snack-bar {
+  background: white !important;
+  color: red;
+  font-weight: bold;
+
+  .mat-button-wrapper {
+    color: blue;
+  }
+}
+
+.red_icon {
+  color: red !important;
+}

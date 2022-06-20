@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ user.id }}. {{ user.first_name }} {{ user.last_name }}</mat-card-title>
+    <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+  </mat-card-header>
+  <img src="{{ user.avatar }}" />
+  <mat-card-actions>
+    <mat-icon
+      [ngClass]="{ 'red_icon': getFavoriteStatus(user.id) }"
+      (click)="favoriteToggle(user.id)"
+    >
+      favorite
+    </mat-icon>
+    <button mat-button [routerLink]="['/users']">
+      Go back
+    </button>
+  </mat-card-actions>
+</mat-card>
+
